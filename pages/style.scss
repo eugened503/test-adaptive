@@ -1,0 +1,12 @@
+
+@import url(../vendor/normalize.css);
+/*# sourceMappingURL=style.css.map */
+
+.page {
+    background-color: brown;
+    min-height: 100vh;
+
+    &__title {
+        font-size: 15px;
+    }
+}
