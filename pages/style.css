@@ -141,6 +141,10 @@ li {
   }
 }
 
+.main-header__logo-link {
+  display: flex;
+}
+
 .main-header__wrapper {
   display: flex;
   align-items: flex-start;
