@@ -1,11 +1,12 @@
 @import url(../vendor/normalize.css);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
 /*# sourceMappingURL=style.css.map */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal; }
 
@@ -19,5 +20,62 @@ a {
 
 li {
   list-style-type: none; }
+
+.body {
+  min-width: 320px; }
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 31px;
+  background: #00a9da; }
+  @media screen and (max-width: 1187px) {
+    .top-bar {
+      flex-direction: column; } }
+  @media screen and (max-width: 540px) {
+    .top-bar .list-mt {
+      margin: 10px 0 0; } }
+  .top-bar__list {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 1187px) {
+      .top-bar__list {
+        margin: 10px 0 0; } }
+    @media screen and (max-width: 540px) {
+      .top-bar__list {
+        display: block;
+        margin: 0; } }
+    .top-bar__list .item-mr {
+      margin: 0 50px 0 0; }
+      @media screen and (max-width: 1187px) {
+        .top-bar__list .item-mr {
+          margin: 0; } }
+  .top-bar__list-item {
+    margin: 0 27px 0 0; }
+    @media screen and (max-width: 1187px) {
+      .top-bar__list-item {
+        margin: 0; } }
+    @media screen and (max-width: 540px) {
+      .top-bar__list-item {
+        padding: 5px 0; } }
+    .top-bar__list-item:last-child {
+      margin: 0; }
+  .top-bar__link {
+    display: block;
+    color: #ffffff;
+    transition: color 0.2s ease-in; }
+    .top-bar__link i {
+      margin: 0 7px 0 0; }
+    .top-bar__link:hover {
+      color: #615e5e; }
+  .top-bar__title {
+    color: #ffffff; }
+    @media screen and (max-width: 1187px) {
+      .top-bar__title {
+        order: -1;
+        text-align: center; } }
+    @media screen and (max-width: 540px) {
+      .top-bar__title {
+        text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */
