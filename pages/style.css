@@ -78,4 +78,79 @@ li {
       .top-bar__title {
         text-align: left; } }
 
+.main-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 31px; }
+  @media screen and (max-width: 640px) {
+    .main-header {
+      display: block; } }
+  .main-header__wrapper {
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 640px) {
+      .main-header__wrapper {
+        justify-content: center; } }
+  .main-header__button {
+    display: none; }
+    @media screen and (max-width: 1187px) {
+      .main-header__button {
+        display: block; } }
+    .main-header__button img {
+      margin: 0 0 0 10px; }
+  @media screen and (max-width: 1187px) {
+    .main-header__nav {
+      display: none; } }
+  .main-header__list {
+    display: flex; }
+  .main-header__list-item {
+    margin: 0 43px 0 0; }
+    .main-header__list-item:last-child {
+      margin: 0; }
+  .main-header__link {
+    display: block;
+    color: #949494;
+    transition: color 0.2s ease-in; }
+    .main-header__link:hover {
+      color: #615e5e; }
+  .main-header__user-info {
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 640px) {
+      .main-header__user-info {
+        margin: 10px 0 0;
+        justify-content: center; } }
+    @media screen and (max-width: 450px) {
+      .main-header__user-info {
+        flex-direction: column; } }
+  .main-header__search-wrapper {
+    margin: 0 20px 0 0;
+    position: relative; }
+    .main-header__search-wrapper i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #949494; }
+  .main-header__search {
+    border-radius: 30px;
+    border: 1px solid #949494;
+    color: #949494;
+    padding: 5px 28px 5px 10px;
+    outline: none; }
+  .main-header__basket {
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 450px) {
+      .main-header__basket {
+        margin: 10px 0 0; } }
+    .main-header__basket i {
+      color: #ff0089;
+      font-size: 25px; }
+  .main-header__sum {
+    margin: 0 8px 0 0;
+    color: #949494; }
+
 /*# sourceMappingURL=style.css.map */

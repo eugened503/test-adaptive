@@ -3,8 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900);
 
 $color-white: #ffffff;
-//$color-green: #68b738;
-//$color-black: #000000;
 $laptop: 1187px;
 $tablet: 540px;
 $mobile: 320px;
@@ -47,7 +45,6 @@ li {
     flex-direction: column;
   }
 
- 
   .list-mt {
     @media screen and (max-width: $tablet) {
       margin: 10px 0 0;
@@ -69,7 +66,7 @@ li {
 
     .item-mr {
       margin: 0 50px 0 0;
-      
+
       @media screen and (max-width: $laptop) {
         margin: 0;
       }
@@ -108,7 +105,7 @@ li {
   &__title {
     color: $color-white;
 
-    @media screen and (max-width: 1187px) {
+    @media screen and (max-width: $laptop) {
       order: -1;
       text-align: center;
     }
@@ -116,6 +113,118 @@ li {
     @media screen and (max-width: $tablet) {
       text-align: left;
     }
+  }
+}
 
+.main-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 31px;
+
+  @media screen and (max-width: 640px) {
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 640px) {
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: none;
+    @media screen and (max-width: $laptop) {
+      display: block;
+    }
+
+    img {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    margin: 0 43px 0 0;
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #949494;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: #615e5e;
+    }
+  }
+
+  &__user-info {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 640px) {
+      margin: 10px 0 0;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
+
+  &__search-wrapper {
+    margin: 0 20px 0 0;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #949494;
+    }
+  }
+
+  &__search {
+    border-radius: 30px;
+    border: 1px solid #949494;
+    color: #949494;
+    padding: 5px 28px 5px 10px;
+    outline: none;
+  }
+
+  &__basket {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 450px) {
+      margin: 10px 0 0;
+    }
+
+    i {
+      color: #ff0089;
+      font-size: 25px;
+    }
+  }
+
+  &__sum {
+    margin: 0 8px 0 0;
+    color: #949494;
   }
 }
