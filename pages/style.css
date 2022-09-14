@@ -1,9 +1,23 @@
 @import url(../vendor/normalize.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
 /*# sourceMappingURL=style.css.map */
-.page {
-  background-color: brown;
-  min-height: 100vh; }
-  .page__title {
-    font-size: 15px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
 
 /*# sourceMappingURL=style.css.map */

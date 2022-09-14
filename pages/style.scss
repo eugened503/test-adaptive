@@ -1,12 +1,35 @@
-
 @import url(../vendor/normalize.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
+
+$color-white: #ffffff;
+$color-green: #68b738;
+$color-black: #000000;
+$laptop-big: 1440px;
+$tablet: 768px;
+$mobile-big: 480px;
+$mobile-middle: 423px;
+$mobile-small: 320px;
+
 /*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
 
-.page {
-    background-color: brown;
-    min-height: 100vh;
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-    &__title {
-        font-size: 15px;
-    }
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
